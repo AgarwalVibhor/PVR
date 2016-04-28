@@ -1,0 +1,72 @@
+<div data-ng-controller="HomeController">
+	<div class="container">
+		<h2 style="color: black; text-align: center; font-weight: bold; text-decoration: underline; font-style: italic;">Welcome To PVR Cinemas</h2>
+		<br>
+		<form role="form">
+			<div class="form-group">
+				<select class="form-control" name="city" id="city" data-ng-model="city">
+					<option value="0">Select City</option>
+					<option data-ng-repeat="option in citiesList track by option.id" value="{{ option.id }}">{{ option.name }}</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<select class="form-control" name="language" id="language" data-ng-model="language" data-ng-change="getMovies();">
+					<option value="0">Select Language</option>
+					<option data-ng-repeat="option in languagesList track by option.id" value="{{ option.id }}">{{ option.name }}</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<select class="form-control" name="movie" id="movie" data-ng-model="movie" data-ng-change="getMovieDetails();">
+					<option value="0">Select Movie</option>
+					<option data-ng-repeat="option in moviesList track by option.id" value="{{ option.id }}">{{ option.name }}</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<select class="form-control" name="theatre" id="theatre" data-ng-model="theatre">
+					<option value="0">Select Theatre</option>
+					<option data-ng-repeat="option in theatresList track by option.id" value="{{ option.id }}">{{ option.name }}</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<select class="form-control" name="show" id="show" data-ng-model="show">
+					<option value="0">Select Show</option>
+					<option data-ng-repeat="option in showsList track by option.id" value="{{ option.id }}">{{ option.name }}</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<select class="form-control" name="date" id="date" data-ng-model="date" data-ng-change="checkAvailability();">
+					<option value="initial">Select Date</option>
+					<option data-ng-repeat="option in datesList track by option.id" value="{{ option.id }}">{{ option.name }}</option>
+				</select>
+			</div>
+			<div data-ng-switch="flag">
+			<div data-ng-switch-when="true"><b>Available Seats : {{ available }} <br>{{ message }}</b></div>
+			</div>
+			<div class="form-group">
+				<select class="form-control" name="noOfSeats" id="noOfSeats" data-ng-model="noOfSeats" data-ng-change="checkSeats();">
+					<option value="0">Select Number Of Seats</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-ng-switch="flag1">
+			<div data-ng-switch-when="true"><b>Sorry!! The theatre room is too full to fit your requirement.</b></div>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary" data-ng-click="chooseSeats();" data-ng-disabled="checkTemp();">CHOOSE SEATS</button>
+
+			</div>
+		</form>
+	
+	</div>
+	
+</div>
+<br>

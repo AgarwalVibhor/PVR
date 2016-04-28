@@ -1,0 +1,63 @@
+<div class="container-fluid" data-ng-controller="BookSeatsController">
+	<div class="row">
+		<div class="col-md-9">
+			<div class="table-responsive">
+				<table class="table theatre-room">
+					<thead>
+						<tr>
+							<th></th>
+							<th data-ng-repeat="col in cols">{{ col }}</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr data-ng-repeat="row in rows">
+							<th>{{ row }}</th>
+							<td data-ng-repeat="col in cols" class="color-0" name="seatTd{{col}}{{row}}" id="seatTd{{col}}{{row}}">
+								<span class="seat" data-ng-click="selectedSeats(col+row);"></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="screen" colspan="{{cols.length + 1}}">SCREEN</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			</div>
+			<div class="col-md-3">
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<tbody>
+							<tr>
+								<th>Movie :</th>
+								<td>{{ movie }}</td>
+							</tr>
+							<tr>
+								<th>Theatre :</th>
+								<td>{{ theatre }}</td>
+							</tr>
+							<tr>
+								<th>Show :</th>
+								<td>{{ show }}</td>
+							</tr>
+							<tr>
+								<th>Date :</th>
+								<td>{{ date }}</td>
+							</tr>
+							<tr>
+								<th>Seats Selected :</th>
+								<td>{{ seats }}</td>
+							</tr>
+							<tr>
+								<th>Price :</th>
+								<td>Rs. {{ totalPrice }}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary" data-ng-click="confirmTicket();">CONFIRM TICKET</button>
+				</div>
+			</div>
+		
+	</div>
+</div>

@@ -1,0 +1,54 @@
+{
+	"cities" : [
+				{"id" : "1", "name" : "Delhi"},
+				{"id" : "2", "name" : "Noida"},
+				{"id" : "3", "name" : "Gurgaon"},
+				{"id" : "4", "name" : "Lucknow"},
+				{"id" : "5", "name" : "Bengaluru"},
+				{"id" : "6", "name" : "Trivandrum"},
+				{"id" : "7", "name" : "Chennai"},
+				{"id" : "8", "name" : "Mumbai"},
+				{"id" : "9", "name" : "Pune"}
+	],
+
+	"languages" : [
+					{"id" : "1", "name" : "English"},
+					{"id" : "2", "name" : "Hindi"},
+					{"id" : "3", "name" : "Telugu"}
+	],
+
+	"movies" : [
+				{"id" : "1", "name" : "The Pursuit of Happyness"},
+				{"id" : "2", "name" : "The Shawshank Redemption"},
+				{"id" : "3", "name" : "Cast Away"},
+				{"id" : "4", "name" : "The NoteBook"},
+				{"id" : "5", "name" : "The Man Who Knew Infinity"},
+				{"id" : "6", "name" : "Airlift"},
+				{"id" : "7", "name" : "Fan"},
+				{"id" : "8", "name" : "Raees"},
+				{"id" : "9", "name" : "Bajrangi Bhaijaan"},
+				{"id" : "10", "name" : "The Return of Rebel"},
+				{"id" : "11", "name" : "Bahubali"},
+				{"id" : "12", "name" : "Bahubali 2"}
+	], 
+
+	"theatres" : [
+				  {"id" : "1", "name" : "The PVS Mall"},
+				  {"id" : "2", "name" : "The Milange Mall"},
+				  {"id" : "3", "name" : "The Saket Mall"},
+				  {"id" : "4", "name" : "The Hypercity Mall"},
+				  {"id" : "5", "name" : "The Phoenix Mall"},
+				  {"id" : "6", "name" : "DLF Place"}
+	],
+
+	"shows" : [
+				{"id" : "1", "name" : "9:00 AM"}, 
+				{"id" : "2", "name" : "12:00 PM"},
+				{"id" : "3", "name" : "2:00 PM"},
+				{"id" : "4", "name" : "3:00 PM" },
+				{"id" : "5", "name" : "5:00 PM"},
+				{"id" : "6", "name" : "6:00 PM"},
+				{"id" : "7", "name" : "7:00 PM"},
+				{"id" : "8", "name" : "9:00 PM"}
+	]
+}

@@ -1,0 +1,123 @@
+html, body {
+	background: url('../assets/images/bg.jpg');
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.nav, .pagination, .carousel, .panel-title a {
+	cursor: pointer;
+}
+
+.header {
+    background: #000;
+	border-top:	2px #ffcc05 solid;
+	border-bottom:	2px #ffcc05 solid;
+	color:#FFFFFF;
+	font-size:10px;
+}
+
+.header .navbar {
+    background: none;
+    border: none;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.container-pvr {
+    margin: auto;
+}
+
+.carousel-control.right, .carousel-control.left{
+	background:none;
+}
+
+.home-form {
+	background:#000000;
+}
+
+.book-ticket-form {
+	background:#fafafa;
+}
+
+.header .navbar-brand {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0;
+    height: auto;
+}
+
+.navbar-header {
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50px;
+	float: none;
+}
+
+.home-form .row {
+	padding-top:15px;
+}
+
+.table-responsive {
+	border:none;
+}
+
+
+.theatre-room tbody tr td, .theatre-room tbody tr th, .theatre-room thead tr th, .theatre-room thead tr td {
+	
+	text-align:center;
+	
+	padding:5px;
+	vertical-align:middle;
+}
+
+.seat {
+    float: left;
+    width: 24px;
+    height: 24px;
+    position: relative;
+	cursor:pointer;
+}
+
+.seat input[type=checkbox] {
+	opacity:0;
+	filter: alpha(opacity=0);
+	position:absolute;
+	cursor:pointer;
+}
+
+.confirm-button {
+	margin:10px;
+	text-align:center;
+}
+
+.color-0 {
+	background-image : url('../assets/images/blue.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.color-9 {
+	background-image : url('../assets/images/green.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.color-10 {
+	background-image : url('../assets/images/grey.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	cursor : default;
+}
+
+
+
+.screen {
+	background-color : black;
+	color : white;
+	height : 150px;
+	
+}
+
